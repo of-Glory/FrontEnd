@@ -3,3 +3,10 @@
     height: 400px;
     border: 2px solid #000;
 }
+
+@media (max-width: 1200px) {
+    .graph {
+        width: 142px;
+        height: 100px;
+    }
+}

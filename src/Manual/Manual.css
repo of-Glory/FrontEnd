@@ -1,0 +1,123 @@
+.manual {
+    height: 100vh;
+    padding: 76px 58px;
+    box-sizing: border-box;
+}
+
+.manual .firstPage, .manual .secondPage {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF0BB;
+    height: 100%;
+    padding: 68px 65px;
+    box-sizing: border-box;
+}
+
+.manual .guide {
+    display: flex;
+    flex-wrap: wrap;
+    height: min-content;
+}
+
+.manual h2, .manual h3 {
+    margin: 0;
+}
+
+.manual h2 {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.manual h3 {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.manual .manual__nav {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.manual .arrow {
+    position: absolute;
+    bottom: 54px;
+    right: 34px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 50px;
+    column-gap: 20px;
+}
+
+@media (max-width: 1300px) {
+    .manual {
+        padding: 24px !important;
+        box-sizing: border-box;
+    }
+    
+    .manual .firstPage, .manual .secondPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: white;
+        padding: 0;
+        box-sizing: border-box;
+        row-gap: 8px;
+    }
+    
+    .manual .guideGroup {
+        background-color: #FFF0BB;
+        position: relative;
+        width: 270px;
+        height: 464px;
+        padding: 40px 24px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .manual h2 {
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 900;
+        font-size: 24px;
+    }
+    
+    .manual h3 {
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 900;
+        font-size: 15px;
+    }
+    
+    .manual .manual__nav .closeBtn {
+        padding: 14px 44px;
+        font-size: 24px !important;
+    }
+    
+    .manual .arrow {
+        display: flex;
+        align-items: center;
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 900;
+        font-size: 20px;
+        column-gap: 20px;
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .manual .arrow img {
+        height: 22px;
+    }
+}

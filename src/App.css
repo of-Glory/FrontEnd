@@ -12,6 +12,7 @@ body {
     position: fixed;
     top: 38px;
     left: 38px;
+    cursor: pointer;
 }
 
 .App .container {
