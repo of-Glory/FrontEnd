@@ -1,4 +1,4 @@
-div.option {
+.option {
     font-size: 70px;
     font-weight: 900;
     font-style: italic;
@@ -7,4 +7,13 @@ div.option {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .option {
+        height: 58px !important;
+        width: 100% !important;
+        font-size: 30px;
+        border-radius: 9999px;
+    }
 }

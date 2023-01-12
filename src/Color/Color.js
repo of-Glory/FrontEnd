@@ -1,14 +1,11 @@
-import { useState } from "react";
+import './Color.css';
 
-const Color = ({ setIsShowColorLs, colorImgUrl }) => {
-    const onClick = () => {
-        setIsShowColorLs(prev => !prev);
-    }
+const Color = ({ colorImgUrl }) => {
 
     return (
         <div>
-            <div className="colorBtn" onClick={onClick}>
-                <img src={colorImgUrl} />
+            <div className="colorBtn">
+                <img className='color' src={colorImgUrl} />
             </div>
         </div>
     )

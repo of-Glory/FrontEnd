@@ -1,14 +1,12 @@
-import { useState } from "react"
+import './Bulb.css';
 
-const Bulb = () => {
-    const [isOn, setIsOn] = useState(false);
-
+const Bulb = ({ isOn, setIsOn }) => {
     return (
         <div>
             { isOn ?
-                <img
+                <img className='bulb'
                     src={`${process.env.PUBLIC_URL}/img/BulbOn.png`}
-                /> : <img
+                /> : <img className='bulb'
                     src={`${process.env.PUBLIC_URL}/img/BulbOff.png`}
                 />
             }
