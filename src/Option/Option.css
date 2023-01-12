@@ -1,0 +1,10 @@
+div.option {
+    font-size: 70px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Inter';
+    color: #ABABAB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
