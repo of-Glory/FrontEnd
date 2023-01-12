@@ -8,6 +8,12 @@ body {
     justify-content: space-evenly;
 }
 
+.App .help {
+    position: fixed;
+    top: 38px;
+    left: 38px;
+}
+
 .App .container {
     height: 100vh;
     box-sizing: border-box;
@@ -35,6 +41,11 @@ body {
         align-items: center;
         justify-content: center;
         row-gap: 13px;
+    }
+    .App .help {
+        width: 32px;
+        top: 14px;
+        left: 14px;
     }
     .App .container {
         width: 242px;

@@ -3,6 +3,7 @@ import Option from "./Option/Option";
 import './App.css';
 import Color from "./Color/Color";
 import { useState } from "react";
+import Graph from "./Graph/Graph";
 
 function App() {
   const [isOn, setIsOn] = useState(false);
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <img className="help" src={`${process.env.PUBLIC_URL}/img/help.png`} />
         <Bulb isOn={isOn} setIsOn={setIsOn} />
         {
           isOn ? <Option text="OFF" style={{ backgroundColor: '#E4CFBC', height: '203px', width: '470px', borderRadius: '60px' }} />
@@ -22,6 +24,7 @@ function App() {
           <Option text="COLOR" style={{ backgroundColor: '#D9D9D9', height: '131px', width: '364px', borderRadius: '40px' }} />
           <Color colorImgUrl={colorImgUrl} />
         </div>
+        <Graph />
       </div>
     </div>
   );
